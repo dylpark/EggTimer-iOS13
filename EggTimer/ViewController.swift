@@ -18,8 +18,12 @@ class ViewController: UIViewController {
         
         let hardness = sender.currentTitle
         
-        if sender.currentTitle == softTime {
-            print(5)
+        if hardness == "Soft" {
+            print(softTime)
+        } else if hardness == "Medium" {
+            print(mediumTime)
+        } else {
+            print(hardTime)
         }
         
     }
